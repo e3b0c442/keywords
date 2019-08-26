@@ -891,3 +891,111 @@
     - with
   sources:
     - http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-408.pdf
+- name: Fortran
+  version: Fortran 2008
+  keywords:
+    - abstract
+    - allocatable
+    - allocate
+    - assign
+    - associate
+    - asynchronous
+    - backspace
+    - bind
+    - block
+    - block data
+    - call
+    - case
+    - class
+    - close
+    - codimension
+    - common
+    - contains
+    - contiguous
+    - continue
+    - critical
+    - cycle
+    - data
+    - deallocate
+    - deferred
+    - dimension
+    - do
+    - do concurrent
+    - elemental
+    - else
+    - else if
+    - elsewhere
+    - end
+    - endfile
+    - endif
+    - entry
+    - enum
+    - enumerator
+    - equivalence
+    - error stop
+    - exit
+    - extends
+    - external
+    - final
+    - flush
+    - forall
+    - format
+    - function
+    - generic
+    - goto
+    - if
+    - implicit
+    - import
+    - include
+    - inquire
+    - intent
+    - interface
+    - intrinsic
+    - lock
+    - module
+    - namelist
+    - non_overridable
+    - nopass
+    - nullify
+    - only
+    - open
+    - operator
+    - optional
+    - parameter
+    - pass
+    - pause
+    - pointer
+    - print
+    - private
+    - procedure
+    - program
+    - protected
+    - public
+    - pure
+    - read
+    - recursive
+    - result
+    - return
+    - rewind
+    - rewrite
+    - save
+    - select
+    - sequence
+    - stop
+    - submodule
+    - subroutine
+    - sync all
+    - sync images
+    - sync memory
+    - target
+    - then
+    - unlock
+    - use
+    - value
+    - volatile
+    - wait
+    - where
+    - while
+    - write
+  sources:
+    - http://fortranwiki.org/fortran/show/Keywords
