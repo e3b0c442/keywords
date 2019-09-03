@@ -1,0 +1,54 @@
+# Go
+# Build your Go project.
+# Add steps that test, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/go
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  GOBIN:  '$(GOPATH)/bin' # Go binaries path
+  GOROOT: '/usr/local/go1.11' # Go installation path
+  GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
+  modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
+
+steps:
+- script: |
+    mkdir -p '$(GOBIN)'
+    mkdir -p '$(GOPATH)/pkg'
+    mkdir -p '$(modulePath)'
+    shopt -s extglob
+    shopt -s dotglob
+    mv !(gopath) '$(modulePath)'
+    echo '##vso[task.prependpath]$(GOBIN)'
+    echo '##vso[task.prependpath]$(GOROOT)/bin'
+  displayName: 'Set up the Go workspace'
+
+- script: |
+    go version
+    go get -v -t -d ./...
+    go run chart.go
+  workingDirectory: '$(modulePath)'
+  displayName: 'Get dependencies, then build'
+
+- script: |
+    git config --global user.email "nick@e3b0c442.io"
+    git config --global user.name "Nick Meyer"
+    git remote set-url origin https://${GITHUB_PAT}@github.com/e3b0c442/keywords
+    git checkout -b new-master
+    git add README.md chart.png
+    git commit -m "[skip ci] Rebuild README.md and chart.png from chart.yaml update"
+    git checkout master
+    git merge new-master
+    git push origin master
+  workingDirectory: '$(modulePath)'
+  displayName: 'Push auto-generated content'
+  env:
+    GITHUB_PAT: $(github_pat)
+  condition: and(succeeded(), in(variables['Build.Reason'], 'IndividualCI', 'Manual'))
+
+
+

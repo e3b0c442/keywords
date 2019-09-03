@@ -26,6 +26,7 @@ Don't see a language here? Please open a pull request adding it!
 * [JS (ES2018) (34 keywords)](#js-es2018-34-keywords)
 * [Java (SE 11) (51 keywords)](#java-se-11-51-keywords)
 * [Kotlin (1.3) (30 keywords)](#kotlin-13-30-keywords)
+* [Lua (5.3) (22 keywords)](#lua-53-22-keywords)
 * [PHP (7.0) (67 keywords)](#php-70-67-keywords)
 * [Python (2.7) (31 keywords)](#python-27-31-keywords)
 * [Python (3.7) (35 keywords)](#python-37-35-keywords)
@@ -238,6 +239,20 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://kotlinlang.org/docs/reference/keyword-reference.html](https://kotlinlang.org/docs/reference/keyword-reference.html)
+### Lua (5.3) (22 keywords)
+| | | | |
+|---|---|---|---|
+|  and | break | do | else |
+|  elseif | end | false | for |
+|  function | goto | if | in |
+|  local | nil | not | or |
+|  repeat | return | then | true |
+|  until | while |
+
+
+#### Sources:
+
+[https://www.lua.org/manual/5.3/manual.html#3.1](https://www.lua.org/manual/5.3/manual.html#3.1)
 ### PHP (7.0) (67 keywords)
 | | | | |
 |---|---|---|---|
