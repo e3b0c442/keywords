@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"sort"
+	"strconv"
 	"text/template"
 
 	"github.com/go-yaml/yaml"
@@ -105,10 +106,25 @@ func main() {
 		chartData[i] = chart.Value{Value: float64(len(data[i].Keywords)), Label: fmt.Sprintf("%s (%s)", data[i].Name, data[i].Version), Style: chart.StyleShow()}
 	}
 
+	//make ticks
+	ticks := []chart.Tick{}
+	max := len(data[len(data)-1].Keywords)
+	i := 0
+	for {
+		ticks = append(ticks, chart.Tick{Value: float64(i * 10), Label: strconv.Itoa(i * 10)})
+		if i*10 > max {
+			break
+		}
+		i++
+	}
+
 	barchart := chart.BarChart{
 		Title:      "Programming languages by keyword count",
 		TitleStyle: chart.StyleShow(),
-		XAxis:      chart.StyleShow(),
+		XAxis: chart.Style{
+			Show:                true,
+			TextRotationDegrees: 90,
+		},
 		YAxis: chart.YAxis{
 			Name:      "Keywords",
 			Style:     chart.StyleShow(),
@@ -116,18 +132,9 @@ func main() {
 			ValueFormatter: func(v interface{}) string {
 				return fmt.Sprintf("%d", int(v.(float64)))
 			},
-			Ticks: []chart.Tick{
-				{0, "0"},
-				{10, "10"},
-				{20, "20"},
-				{30, "30"},
-				{40, "40"},
-				{50, "50"},
-				{60, "60"},
-				{70, "70"},
-				{80, "80"},
-			},
+			Ticks: ticks,
 		},
+
 		UseBaseValue: true,
 		BaseValue:    0,
 		Bars:         chartData,
