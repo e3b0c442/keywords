@@ -17,25 +17,25 @@ Don't see a language here? Please open a pull request adding it!
 
 * [C (ANSI) (32 keywords)](#c-ansi-32-keywords)
 * [C (C18) (44 keywords)](#c-c18-44-keywords)
-* [C# (5.0) (77 keywords)](#c-50-77-keywords)
+* [C# (ISO/IEC 23270:2018) (77 keywords)](#c-iso-iec-23270-2018-77-keywords)
 * [C++ (C++17) (73 keywords)](#c-c-17-73-keywords)
 * [Dart (1) (33 keywords)](#dart-1-33-keywords)
-* [Elixir (1.7) (15 keywords)](#elixir-17-15-keywords)
-* [Erlang (21.2) (27 keywords)](#erlang-212-27-keywords)
+* [Elixir (1.10) (15 keywords)](#elixir-110-15-keywords)
+* [Erlang (23) (27 keywords)](#erlang-23-27-keywords)
 * [Fortran (Fortran 2008) (103 keywords)](#fortran-fortran-2008-103-keywords)
-* [Go (1.11) (25 keywords)](#go-111-25-keywords)
-* [JS (ES2018) (34 keywords)](#js-es2018-34-keywords)
-* [Java (SE 11) (51 keywords)](#java-se-11-51-keywords)
-* [Kotlin (1.3) (30 keywords)](#kotlin-13-30-keywords)
+* [Go (1.14) (25 keywords)](#go-114-25-keywords)
+* [JS (ES2019) (34 keywords)](#js-es2019-34-keywords)
+* [Java (SE 14) (51 keywords)](#java-se-14-51-keywords)
+* [Kotlin (1.3) (76 keywords)](#kotlin-13-76-keywords)
 * [Lua (5.3) (22 keywords)](#lua-53-22-keywords)
-* [PHP (7.0) (67 keywords)](#php-70-67-keywords)
+* [PHP (7.0) (69 keywords)](#php-70-69-keywords)
 * [Python (2.7) (31 keywords)](#python-27-31-keywords)
-* [Python (3.7) (35 keywords)](#python-37-35-keywords)
-* [R (3.5) (20 keywords)](#r-35-20-keywords)
-* [Ruby (2.5) (41 keywords)](#ruby-25-41-keywords)
-* [Rust (1.31) (53 keywords)](#rust-131-53-keywords)
-* [Scala (2.12) (40 keywords)](#scala-212-40-keywords)
-* [Swift (4.2) (70 keywords)](#swift-42-70-keywords)
+* [Python (3.8) (35 keywords)](#python-38-35-keywords)
+* [R (3.5) (21 keywords)](#r-35-21-keywords)
+* [Ruby (2.7) (41 keywords)](#ruby-27-41-keywords)
+* [Rust (1.43) (40 keywords)](#rust-143-40-keywords)
+* [Scala (2.13) (40 keywords)](#scala-213-40-keywords)
+* [Swift (5.2) (96 keywords)](#swift-52-96-keywords)
 
 ### C (ANSI) (32 keywords)
 | | | | |
@@ -72,7 +72,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [http://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf](http://www.open-std.org/jtc1/sc22/wg14/www/abq/c17_updated_proposed_fdis.pdf)
-### C# (5.0) (77 keywords)
+### C# (ISO/IEC 23270:2018) (77 keywords)
 | | | | |
 |---|---|---|---|
 |  abstract | as | base | bool |
@@ -99,7 +99,7 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[https://download.microsoft.com/download/0/B/D/0BDA894F-2CCD-4C2C-B5A7-4EB1171962E5/CSharp%20Language%20Specification.docx](https://download.microsoft.com/download/0/B/D/0BDA894F-2CCD-4C2C-B5A7-4EB1171962E5/CSharp%20Language%20Specification.docx)
+[https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)
 ### C++ (C++17) (73 keywords)
 | | | | |
 |---|---|---|---|
@@ -144,7 +144,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-408.pdf](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-408.pdf)
-### Elixir (1.7) (15 keywords)
+### Elixir (1.10) (15 keywords)
 | | | | |
 |---|---|---|---|
 |  true | false | nil | when |
@@ -155,8 +155,8 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[https://github.com/elixir-lang/elixir/blob/master/lib/elixir/pages/Syntax%20Reference.md](https://github.com/elixir-lang/elixir/blob/master/lib/elixir/pages/Syntax%20Reference.md)
-### Erlang (21.2) (27 keywords)
+[https://hexdocs.pm/elixir/syntax-reference.html#reserved-words](https://hexdocs.pm/elixir/syntax-reference.html#reserved-words)
+### Erlang (23) (27 keywords)
 | | | | |
 |---|---|---|---|
 |  after | and | andalso | band |
@@ -205,7 +205,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [http://fortranwiki.org/fortran/show/Keywords](http://fortranwiki.org/fortran/show/Keywords)
-### Go (1.11) (25 keywords)
+### Go (1.14) (25 keywords)
 | | | | |
 |---|---|---|---|
 |  break | case | chan | const |
@@ -220,7 +220,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://golang.org/ref/spec#Keywords](https://golang.org/ref/spec#Keywords)
-### JS (ES2018) (34 keywords)
+### JS (ES2019) (34 keywords)
 | | | | |
 |---|---|---|---|
 |  await | break | case | catch |
@@ -236,8 +236,8 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[https://www.ecma-international.org/ecma-262/9.0/index.html#sec-keywords](https://www.ecma-international.org/ecma-262/9.0/index.html#sec-keywords)
-### Java (SE 11) (51 keywords)
+[https://www.ecma-international.org/ecma-262/index.html#sec-keywords](https://www.ecma-international.org/ecma-262/index.html#sec-keywords)
+### Java (SE 14) (51 keywords)
 | | | | |
 |---|---|---|---|
 |  abstract | assert | boolean | break |
@@ -258,17 +258,28 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://docs.oracle.com/javase/specs/jls/se11/html/jls-3.html#jls-3.9](https://docs.oracle.com/javase/specs/jls/se11/html/jls-3.html#jls-3.9)
-### Kotlin (1.3) (30 keywords)
+### Kotlin (1.3) (76 keywords)
 | | | | |
 |---|---|---|---|
 |  as | as? | break | class |
 |  continue | do | else | false |
 |  for | fun | if | in |
-|   | interface | is |  |
+|  !in | interface | is | !is |
 |  null | object | package | return |
 |  super | this | throw | true |
 |  try | typealias | val | var |
-|  when | while |
+|  when | while | by | catch |
+|  constructor | delegate | dynamic | field |
+|  file | finally | get | import |
+|  init | param | property | receiver |
+|  set | setparam | where | actual |
+|  abstract | annotation | companion | const |
+|  crossinline | data | enum | expect |
+|  external | final | infix | inline |
+|  inner | internal | lateinit | noinline |
+|  open | operator | out | override |
+|  private | protected | public | reified |
+|  sealed | suspend | tailrec | vararg |
 
 
 #### Sources:
@@ -288,7 +299,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://www.lua.org/manual/5.3/manual.html#3.1](https://www.lua.org/manual/5.3/manual.html#3.1)
-### PHP (7.0) (67 keywords)
+### PHP (7.0) (69 keywords)
 | | | | |
 |---|---|---|---|
 |  __halt_compiler() | abstract | and | array() |
@@ -299,15 +310,16 @@ Don't see a language here? Please open a pull request adding it!
 |  empty() | enddeclare | endfor | endforeach |
 |  endif | endswitch | endwhile | eval() |
 |  exit() | extends | final | finally |
-|  for | foreach | function | global |
-|  goto | if | implements | include |
-|  include_once | instanceof | insteadof | interface |
-|  isset() | list() | namespace | new |
-|  or | print | private | protected |
-|  public | require | require_once | return |
-|  static | switch | throw | trait |
-|  try | unset() | use | var |
-|  while | xor | yield |
+|  fn | for | foreach | function |
+|  global | goto | if | implements |
+|  include | include_once | instanceof | insteadof |
+|  interface | isset() | list() | namespace |
+|  new | or | print | private |
+|  protected | public | require | require_once |
+|  return | static | switch | throw |
+|  trait | try | unset() | use |
+|  var | while | xor | yield |
+|  yield from |
 
 
 #### Sources:
@@ -329,7 +341,7 @@ Don't see a language here? Please open a pull request adding it!
 #### Sources:
 
 [https://docs.python.org/2/reference/lexical_analysis.html#keywords](https://docs.python.org/2/reference/lexical_analysis.html#keywords)
-### Python (3.7) (35 keywords)
+### Python (3.8) (35 keywords)
 | | | | |
 |---|---|---|---|
 |  False | None | True | and |
@@ -345,21 +357,22 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[https://docs.python.org/3.7/reference/lexical_analysis.html#keywords](https://docs.python.org/3.7/reference/lexical_analysis.html#keywords)
-### R (3.5) (20 keywords)
+[https://docs.python.org/3.8/reference/lexical_analysis.html#keywords](https://docs.python.org/3.8/reference/lexical_analysis.html#keywords)
+### R (3.5) (21 keywords)
 | | | | |
 |---|---|---|---|
-|  ... | FALSE | Inf | NA |
-|  NA_character_ | NA_complex_ | NA_integer_ | NA_real_ |
-|  NaN | NULL | TRUE | break |
-|  else | for | function | if |
-|  in | next | repeat | while |
+|  ... | ..1 | FALSE | Inf |
+|  NA | NA_character_ | NA_complex_ | NA_integer_ |
+|  NA_real_ | NaN | NULL | TRUE |
+|  break | else | for | function |
+|  if | in | next | repeat |
+|  while |
 
 
 #### Sources:
 
 [https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Reserved-words](https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Reserved-words)
-### Ruby (2.5) (41 keywords)
+### Ruby (2.7) (41 keywords)
 | | | | |
 |---|---|---|---|
 |  _ENCODING_ | _LINE_ | _FILE_ | BEGIN |
@@ -377,30 +390,26 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[https://docs.ruby-lang.org/en/2.5.0/keywords_rdoc.html](https://docs.ruby-lang.org/en/2.5.0/keywords_rdoc.html)
-### Rust (1.31) (53 keywords)
+[https://docs.ruby-lang.org/en/2.7.0/keywords_rdoc.html](https://docs.ruby-lang.org/en/2.7.0/keywords_rdoc.html)
+### Rust (1.43) (40 keywords)
 | | | | |
 |---|---|---|---|
-|  _ | abstract | alignof | as |
-|  become | box | break | const |
-|  continue | crate | do | else |
-|  enum | extern | false | final |
-|  fn | for | if | impl |
-|  in | let | loop | macro |
+|  as | break | const | continue |
+|  crate | else | enum | extern |
+|  false | fn | for | if |
+|  impl | in | let | loop |
 |  match | mod | move | mut |
-|  offsetof | override | priv | proc |
-|  pub | pure | ref | return |
-|  Self | self | sizeof | static |
-|  struct | super | trait | true |
-|  type | typeof | unsafe | unsized |
-|  use | virtual | where | while |
-|  yield |
+|  pub | ref | return | self |
+|  Self | static | struct | super |
+|  trait | true | type | unsafe |
+|  use | where | while | async |
+|  await | dyn | union | \'static |
 
 
 #### Sources:
 
 [https://doc.rust-lang.org/grammar.html#keywords](https://doc.rust-lang.org/grammar.html#keywords)
-### Scala (2.12) (40 keywords)
+### Scala (2.13) (40 keywords)
 | | | | |
 |---|---|---|---|
 |  abstract | case | catch | class |
@@ -417,28 +426,34 @@ Don't see a language here? Please open a pull request adding it!
 
 #### Sources:
 
-[https://scala-lang.org/files/archive/spec/2.12/01-lexical-syntax.html](https://scala-lang.org/files/archive/spec/2.12/01-lexical-syntax.html)
-### Swift (4.2) (70 keywords)
+[https://scala-lang.org/files/archive/spec/2.13/01-lexical-syntax.html](https://scala-lang.org/files/archive/spec/2.13/01-lexical-syntax.html)
+### Swift (5.2) (96 keywords)
 | | | | |
 |---|---|---|---|
 |  associatedtype | class | deinit | enum |
 |  extension | fileprivate | func | import |
 |  init | inout | internal | let |
 |  open | operator | private | protocol |
-|  public | static | struct | subscript |
-|  typealias | var | break | case |
-|  continue | default | defer | do |
-|  else | fallthrough | for | guard |
-|  if | in | repeat | return |
-|  switch | where | while | as |
-|  Any | catch | false | is |
-|  nil | rethrows | super | self |
+|  public | rethrows | static | struct |
+|  subscript | typealias | var | break |
+|  case | continue | default | defer |
+|  do | else | fallthrough | for |
+|  guard | if | in | repeat |
+|  return | switch | where | while |
+|  as | Any | catch | false |
+|  is | nil | super | self |
 |  Self | throw | throws | true |
 |  try | _ | #available | #colorLiteral |
 |  #column | #else | #elseif | #endif |
 |  #error | #file | #fileLiteral | #function |
 |  #if | #imageLiteral | #line | #selector |
-|  #sourceLocation | #warning |
+|  #sourceLocation | #warning | associativity | convenience |
+|  dynamic | didSet | final | get |
+|  infix | indirect | lazy | left |
+|  mutating | none | nonmutating | optional |
+|  override | postfix | precedence | prefix |
+|  Protocol | required | right | set |
+|  Type | unowned | weak | willSet |
 
 
 #### Sources:

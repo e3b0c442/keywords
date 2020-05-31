@@ -7,7 +7,7 @@
     - else
     - elseif
     - end
-    - false
+    - "false"
     - for
     - function
     - goto
@@ -20,13 +20,13 @@
     - repeat
     - return
     - then
-    - true
+    - "true"
     - until
     - while
   sources:
     - https://www.lua.org/manual/5.3/manual.html#3.1
 - name: Go
-  version: 1.11
+  version: 1.14
   keywords:
     - break
     - case
@@ -141,11 +141,11 @@
   sources:
     - https://docs.python.org/2/reference/lexical_analysis.html#keywords
 - name: Python
-  version: 3.7
+  version: 3.8
   keywords:
-    - False
+    - "False"
     - None
-    - True
+    - "True"
     - and
     - as
     - assert
@@ -179,7 +179,7 @@
     - with
     - yield
   sources:
-    - https://docs.python.org/3.7/reference/lexical_analysis.html#keywords
+    - https://docs.python.org/3.8/reference/lexical_analysis.html#keywords
 - name: C
   version: ANSI
   keywords:
@@ -218,7 +218,7 @@
   sources:
     - http://port70.net/~nsz/c/c89/c89-draft.html#3.1.1
 - name: Java
-  version: SE 11
+  version: SE 14
   keywords:
     - abstract
     - assert
@@ -303,7 +303,7 @@
     - explicit
     - export
     - extern
-    - false
+    - "false"
     - float
     - for
     - friend
@@ -336,7 +336,7 @@
     - this
     - thread_local
     - throw
-    - true
+    - "true"
     - try
     - typedef
     - typeid
@@ -352,7 +352,7 @@
   sources:
     - http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf
 - name: "C#"
-  version: 5.0
+  version: ISO/IEC 23270:2018
   keywords:
     - abstract
     - as
@@ -377,7 +377,7 @@
     - event
     - explicit
     - extern
-    - false
+    - "false"
     - finally
     - fixed
     - float
@@ -418,7 +418,7 @@
     - switch
     - this
     - throw
-    - true
+    - "true"
     - try
     - typeof
     - uint
@@ -432,9 +432,9 @@
     - volatile
     - while
   sources: 
-    - https://download.microsoft.com/download/0/B/D/0BDA894F-2CCD-4C2C-B5A7-4EB1171962E5/CSharp%20Language%20Specification.docx
+    - https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip
 - name: PHP
-  version: 7.0
+  version: 7.4
   keywords:
     - __halt_compiler()
     - abstract
@@ -468,6 +468,7 @@
     - extends
     - final
     - finally
+    - fn
     - for
     - foreach
     - function
@@ -503,13 +504,15 @@
     - while
     - xor
     - yield
+    - "yield from"
   sources:
     - http://php.net/manual/en/reserved.keywords.php
 - name: R
-  version: 3.5
+  version: 4.0
   keywords:
-    - ...
-    - FALSE
+    - "..."
+    - "..1"
+    - "FALSE"
     - Inf
     - NA
     - NA_character_
@@ -518,7 +521,7 @@
     - NA_real_
     - NaN
     - "NULL"
-    - TRUE
+    - "TRUE"
     - break
     - else
     - for
@@ -531,7 +534,7 @@
   sources:
     - https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Reserved-words
 - name: "JS"
-  version: "ES2018"
+  version: "ES2019"
   keywords:
     - await
     - break
@@ -568,9 +571,9 @@
     - with
     - yield
   sources:
-    - https://www.ecma-international.org/ecma-262/9.0/index.html#sec-keywords
+    - https://www.ecma-international.org/ecma-262/index.html#sec-keywords
 - name: Ruby
-  version: 2.5
+  version: 2.7
   keywords:
     - _ENCODING_
     - _LINE_
@@ -590,7 +593,7 @@
     - elsif
     - end
     - ensure
-    - false
+    - "false"
     - for
     - if
     - in
@@ -606,7 +609,7 @@
     - self
     - super
     - then
-    - true
+    - "true"
     - undef
     - unless
     - until
@@ -614,9 +617,9 @@
     - while
     - yield
   sources:
-    - https://docs.ruby-lang.org/en/2.5.0/keywords_rdoc.html
+    - https://docs.ruby-lang.org/en/2.7.0/keywords_rdoc.html
 - name: Swift
-  version: 4.2
+  version: 5.2
   keywords:
     - associatedtype
     - class
@@ -635,6 +638,7 @@
     - private
     - protocol
     - public
+    - rethrows
     - static
     - struct
     - subscript
@@ -660,16 +664,15 @@
     - as
     - Any
     - catch
-    - false
+    - "false"
     - is
     - nil
-    - rethrows
     - super
     - self
     - Self
     - throw
     - throws
-    - true
+    - "true"
     - try
     - _
     - "#available"
@@ -688,10 +691,36 @@
     - "#selector"
     - "#sourceLocation"
     - "#warning"
+    - associativity
+    - convenience
+    - dynamic
+    - didSet
+    - final
+    - get
+    - infix
+    - indirect
+    - lazy
+    - left
+    - mutating
+    - none
+    - nonmutating
+    - optional
+    - override
+    - postfix
+    - precedence
+    - prefix
+    - Protocol
+    - required
+    - right
+    - set
+    - Type
+    - unowned
+    - weak
+    - willSet
   sources:
     - https://docs.swift.org/swift-book/ReferenceManual/LexicalStructure.html
 - name: Scala
-  version: 2.12
+  version: 2.13
   keywords:
     - abstract
     - case
@@ -701,7 +730,7 @@
     - do
     - else
     - extends
-    - false
+    - "false"
     - final
     - finally
     - for
@@ -726,7 +755,7 @@
     - throw
     - trait
     - try
-    - true
+    - "true"
     - type
     - val
     - var
@@ -734,9 +763,9 @@
     - with
     - yield
   sources:
-    - https://scala-lang.org/files/archive/spec/2.12/01-lexical-syntax.html
+    - https://scala-lang.org/files/archive/spec/2.13/01-lexical-syntax.html
 - name: Erlang
-  version: 21.2
+  version: 23
   keywords:
     - after
     - and
@@ -768,24 +797,17 @@
   sources:
     - http://erlang.org/doc/reference_manual/introduction.html#reserved-words
 - name: Rust
-  version: 1.31
+  version: 1.43
   keywords:
-    - _
-    - abstract
-    - alignof
     - as
-    - become
-    - box
     - break
     - const
     - continue
     - crate
-    - do
     - else
     - enum
     - extern
-    - false
-    - final
+    - "false"
     - fn
     - for
     - if
@@ -793,36 +815,30 @@
     - in
     - let
     - loop
-    - macro
     - match
     - mod
     - move
     - mut
-    - offsetof
-    - override
-    - priv
-    - proc
     - pub
-    - pure
     - ref
     - return
-    - Self
     - self
-    - sizeof
+    - Self
     - static
     - struct
     - super
     - trait
-    - true
+    - "true"
     - type
-    - typeof
     - unsafe
-    - unsized
     - use
-    - virtual
     - where
     - while
-    - yield
+    - async
+    - await
+    - dyn
+    - union
+    - \'static
   sources:
     - https://doc.rust-lang.org/grammar.html#keywords
 - name: Kotlin
@@ -835,15 +851,15 @@
     - continue
     - do
     - else
-    - false
+    - "false"
     - for
     - fun
     - if
     - in
-    - !in
+    - "!in"
     - interface
     - is
-    - !is
+    - "!is"
     - "null"
     - object
     - package
@@ -851,20 +867,66 @@
     - super
     - this
     - throw
-    - true
+    - "true"
     - try
     - typealias
     - val
     - var
     - when
     - while
+    - by
+    - catch
+    - constructor
+    - delegate
+    - dynamic
+    - field
+    - file
+    - finally
+    - get
+    - import
+    - init
+    - param
+    - property
+    - receiver
+    - set
+    - setparam
+    - where
+    - actual
+    - abstract
+    - annotation
+    - companion
+    - const
+    - crossinline
+    - data
+    - enum
+    - expect
+    - external
+    - final
+    - infix
+    - inline
+    - inner
+    - internal
+    - lateinit
+    - noinline
+    - open
+    - operator
+    - out
+    - override
+    - private
+    - protected
+    - public
+    - reified
+    - sealed
+    - suspend
+    - tailrec
+    - vararg
   sources: 
     - https://kotlinlang.org/docs/reference/keyword-reference.html
 - name: Elixir
-  version: 1.7
+  version: 1.10
   keywords:
-    - true
-    - false
+    - "true"
+    - "false"
     - nil
     - when
     - and
@@ -879,7 +941,7 @@
     - after
     - else
   sources:
-    - https://github.com/elixir-lang/elixir/blob/master/lib/elixir/pages/Syntax%20Reference.md
+    - https://hexdocs.pm/elixir/syntax-reference.html#reserved-words
 - name: Dart
   version: 1
   keywords:
@@ -895,7 +957,7 @@
     - else
     - enum
     - extends
-    - false
+    - "false"
     - final
     - finally
     - for
@@ -910,7 +972,7 @@
     - switch
     - this
     - throw
-    - true
+    - "true"
     - try
     - var
     - void
