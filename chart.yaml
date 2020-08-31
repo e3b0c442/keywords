@@ -26,7 +26,7 @@
   sources:
     - https://www.lua.org/manual/5.3/manual.html#3.1
 - name: Go
-  version: 1.14
+  version: 1.15
   keywords:
     - break
     - case
@@ -274,6 +274,85 @@
   sources:
     - https://docs.oracle.com/javase/specs/jls/se11/html/jls-3.html#jls-3.9
 - name: C++
+  version: C++98
+  keywords:
+    - asm
+    - auto
+    - bool
+    - break
+    - case
+    - catch
+    - char
+    - class
+    - const
+    - const_cast
+    - continue
+    - default
+    - delete
+    - do
+    - double
+    - dynamic_cast
+    - else
+    - enum
+    - explicit
+    - export
+    - extern
+    - "false"
+    - float
+    - for
+    - friend
+    - goto
+    - if
+    - inline
+    - int
+    - long
+    - mutable
+    - namespace
+    - new
+    - operator
+    - private
+    - protected
+    - public
+    - register
+    - reinterpret_cast
+    - return
+    - short
+    - signed
+    - sizeof
+    - static
+    - static_cast
+    - struct
+    - switch
+    - template
+    - this
+    - throw
+    - "true"
+    - try
+    - typedef
+    - typeid
+    - typename
+    - union
+    - unsigned
+    - using
+    - virtual
+    - void
+    - volatile
+    - wchar_t
+    - while
+    - and
+    - and_eq
+    - bitand
+    - bitor
+    - compl
+    - not
+    - not_eq
+    - or
+    - or_eq
+    - xor
+    - xor_eq
+  sources:
+    - http://www.lirmm.fr/~ducour/Doc-objets/ISO+IEC+14882-1998.pdf
+- name: C++
   version: C++17
   keywords:
     - alignas
@@ -349,10 +428,21 @@
     - volatile
     - wchar_t
     - while
+    - and
+    - and_eq
+    - bitand
+    - bitor
+    - compl
+    - not
+    - not_eq
+    - or
+    - or_eq
+    - xor
+    - xor_eq
   sources:
     - http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf
 - name: "C#"
-  version: ISO/IEC 23270:2018
+  version: 8.0
   keywords:
     - abstract
     - as
@@ -431,6 +521,36 @@
     - void
     - volatile
     - while
+    - add
+    - alias
+    - ascending
+    - async
+    - await
+    - by
+    - descending
+    - dynamic
+    - equals
+    - from
+    - get
+    - global
+    - group
+    - into
+    - join
+    - let
+    - nameof
+    - notnull
+    - on
+    - orderby
+    - partial
+    - remove
+    - select
+    - set
+    - unmanaged
+    - value
+    - var
+    - when
+    - where
+    - yield
   sources: 
     - https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip
 - name: PHP
@@ -534,7 +654,7 @@
   sources:
     - https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Reserved-words
 - name: "JS"
-  version: "ES2019"
+  version: "ES2020"
   keywords:
     - await
     - break
@@ -548,8 +668,10 @@
     - delete
     - do
     - else
+    - enum
     - export
     - extends
+    - "false"
     - finally
     - for
     - function
@@ -558,11 +680,13 @@
     - in
     - instanceof
     - new
+    - "null"
     - return
     - super
     - switch
     - this
     - throw
+    - "true"
     - try
     - typeof
     - var
@@ -619,7 +743,7 @@
   sources:
     - https://docs.ruby-lang.org/en/2.7.0/keywords_rdoc.html
 - name: Swift
-  version: 5.2
+  version: 5.3
   keywords:
     - associatedtype
     - class
@@ -683,6 +807,7 @@
     - "#endif"
     - "#error"
     - "#file"
+    - "#filePath"
     - "#fileLiteral"
     - "#function"
     - "#if"
@@ -797,7 +922,7 @@
   sources:
     - http://erlang.org/doc/reference_manual/introduction.html#reserved-words
 - name: Rust
-  version: 1.43
+  version: 1.46
   keywords:
     - as
     - break
@@ -837,12 +962,25 @@
     - async
     - await
     - dyn
+    - abstract
+    - become
+    - box
+    - do
+    - final
+    - macro
+    - override
+    - priv
+    - typeof
+    - unsized
+    - virtual
+    - yield
+    - try
     - union
     - \'static
   sources:
     - https://doc.rust-lang.org/grammar.html#keywords
 - name: Kotlin
-  version: 1.3
+  version: 1.4
   keywords:
     - as
     - as?
@@ -870,6 +1008,7 @@
     - "true"
     - try
     - typealias
+    - typeof
     - val
     - var
     - when
@@ -920,6 +1059,8 @@
     - suspend
     - tailrec
     - vararg
+    - field
+    - it
   sources: 
     - https://kotlinlang.org/docs/reference/keyword-reference.html
 - name: Elixir
@@ -943,7 +1084,7 @@
   sources:
     - https://hexdocs.pm/elixir/syntax-reference.html#reserved-words
 - name: Dart
-  version: 1
+  version: 2.2
   keywords:
     - assert
     - break
@@ -979,7 +1120,7 @@
     - while
     - with
   sources:
-    - http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-408.pdf
+    - https://dart.dev/guides/language/specifications/DartLangSpec-v2.2.pdf
 - name: Fortran
   version: Fortran 2008
   keywords:
@@ -1088,3 +1229,338 @@
     - write
   sources:
     - http://fortranwiki.org/fortran/show/Keywords
+- name: MATLAB
+  version: R2020a
+  keywords:
+    - break
+    - case
+    - catch
+    - classdef
+    - continue
+    - else
+    - elseif
+    - end
+    - for
+    - function
+    - global
+    - if 
+    - otherwise
+    - parfor
+    - persistent
+    - return
+    - spmd
+    - switch
+    - try
+    - while
+- name: Visual Basic
+  version: 2019
+  keywords:
+    - AddHandler
+    - AddressOf
+    - Alias
+    - And
+    - AndAlso
+    - As
+    - Boolean
+    - ByRef
+    - Byte
+    - ByVal
+    - Call
+    - Case
+    - Catch
+    - CBool
+    - CByte
+    - CChar
+    - CDate
+    - CDbl
+    - CDec
+    - Char
+    - CInt
+    - Class
+    - CLng
+    - CObj
+    - Const
+    - Continue
+    - CSByte
+    - CShort
+    - CSng
+    - CStr
+    - CType
+    - CUInt
+    - CULng
+    - CUShort
+    - Date
+    - Decimal
+    - Declare
+    - Default
+    - Delegate
+    - Dim
+    - DirectCast
+    - Do
+    - Double
+    - Each
+    - Else
+    - ElseIf
+    - End
+    - EndIf
+    - Enum
+    - Erase
+    - Error
+    - Event
+    - Exit
+    - "False"
+    - Finally
+    - For
+    - For Each
+    - Friend
+    - Function
+    - Get
+    - GetType
+    - GetXMLNamespace
+    - Global
+    - GoSub
+    - GoTo
+    - Handles
+    - If
+    - If()
+    - Implements
+    - Imports
+    - In
+    - Inherits
+    - Integer
+    - Interface
+    - Is
+    - IsNot
+    - Let
+    - Lib
+    - Like
+    - Long
+    - Loop
+    - Me
+    - Mod
+    - Module
+    - MustInherit
+    - MustOverride
+    - MyBase
+    - MyClass
+    - NameOf
+    - Namespace
+    - Narrowing
+    - New
+    - Next
+    - Not
+    - Nothnig
+    - NotInheritable
+    - NotOverridable
+    - Object
+    - Of
+    - On
+    - Operator
+    - Option
+    - Optional
+    - Or
+    - OrElse
+    - Out
+    - Overloads
+    - Overridable
+    - Overrides
+    - ParamArray
+    - Partial
+    - Private
+    - Property
+    - Protected
+    - Public
+    - RaiseEvent
+    - ReadOnly
+    - ReDim
+    - REM
+    - RemoveHandler
+    - Resume
+    - Return
+    - SByte
+    - Select
+    - Set
+    - Shadows
+    - Shared
+    - Short
+    - Single
+    - Static
+    - Step
+    - Stop
+    - String
+    - Structure
+    - Sub
+    - SyncLock
+    - Then
+    - Throw
+    - To
+    - "True"
+    - Try
+    - TryCast
+    - TypeOf
+    - UInteger
+    - ULong
+    - UShort
+    - Using
+    - Variant
+    - Wend
+    - When
+    - While
+    - Widening
+    - With
+    - WithEvents
+    - WriteOnly
+    - Xor
+    - "#Const"
+    - "#Else"
+    - "#ElseIf"
+    - "#End"
+    - "#If"
+    - "="
+    - "&"
+    - "&="
+    - "*"
+    - "*="
+    - "/"
+    - "/="
+    - "\"
+    - "\="
+    - "^"
+    - "^="
+    - "+"
+    - "+="
+    - "-"
+    - "-="
+    - ">>"
+    - ">>="
+    - "<<"
+    - "<<="
+    - Aggregate
+    - Ansi
+    - Assembly
+    - Async
+    - Auto
+    - Await
+    - Binary
+    - Compare
+    - Custom
+    - Distinct
+    - Equals
+    - Explicit
+    - From
+    - Group By
+    - Group Join
+    - Into
+    - IsFalse
+    - IsTrue
+    - Iterator
+    - Join
+    - Key
+    - Mid
+    - Off
+    - Order By
+    - Preserve
+    - Skip
+    - Skip While
+    - Strict
+    - Take
+    - Take While
+    - Text
+    - Unicode
+    - Until
+    - Where
+    - Yield
+    - "#ExternalSource"
+    - "#Region"
+  sources:
+    - "https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/keywords/"
+- name: Objective-C
+  version: 2.0
+  keywords:
+    - asm
+    - auto
+    - break
+    - case
+    - char
+    - const
+    - continue
+    - default
+    - do
+    - double
+    - else
+    - enum
+    - extern
+    - float
+    - for
+    - goto
+    - if
+    - inline
+    - int
+    - long
+    - register
+    - restrict
+    - return
+    - short
+    - signed
+    - sizeof
+    - static
+    - struct
+    - switch
+    - typedef
+    - union
+    - unsigned
+    - void
+    - volatile
+    - while
+    - _Bool
+    - _Complex
+    - __block
+    - Imaginary
+    - id
+    - Class
+    - SEL
+    - IMP
+    - BOOL
+    - nil
+    - Nil
+    - YES
+    - NO
+    - self
+    - super
+    - _cmd
+    - __strong
+    - __weak
+    - __autoreleasing
+    - __unsafe_unretained
+    - oneway
+    - In
+    - out
+    - inout
+    - bycopy
+    - byref
+    - @autoreleasepool
+    - @interface
+    - @implementation
+    - @protocol
+    - @end
+    - @private
+    - @protected
+    - @public
+    - @package
+    - @try
+    - @throw
+    - @catch()
+    - @finally
+    - @property
+    - @synthesize
+    - @dynamic
+    - @class
+    - @selector()
+    - @protocol()
+    - @required
+    - @optional
+    - @encode
+    - @"string"
+    - @synchronized()
+  sources:
+    - https://learning.oreilly.com/library/view/learning-objective-c-20/9780321712110/
