@@ -1252,6 +1252,8 @@
     - switch
     - try
     - while
+  sources:
+    - https://www.mathworks.com/help/matlab/ref/iskeyword.html
 - name: Visual Basic
   version: 2019
   keywords:
@@ -1423,8 +1425,8 @@
     - "*="
     - "/"
     - "/="
-    - "\"
-    - "\="
+    - "\\"
+    - "\\="
     - "^"
     - "^="
     - "+"
@@ -1538,29 +1540,29 @@
     - inout
     - bycopy
     - byref
-    - @autoreleasepool
-    - @interface
-    - @implementation
-    - @protocol
-    - @end
-    - @private
-    - @protected
-    - @public
-    - @package
-    - @try
-    - @throw
-    - @catch()
-    - @finally
-    - @property
-    - @synthesize
-    - @dynamic
-    - @class
-    - @selector()
-    - @protocol()
-    - @required
-    - @optional
-    - @encode
-    - @"string"
-    - @synchronized()
+    - "@autoreleasepool"
+    - "@interface"
+    - "@implementation"
+    - "@protocol"
+    - "@end"
+    - "@private"
+    - "@protected"
+    - "@public"
+    - "@package"
+    - "@try"
+    - "@throw"
+    - "@catch()"
+    - "@finally"
+    - "@property"
+    - "@synthesize"
+    - "@dynamic"
+    - "@class"
+    - "@selector()"
+    - "@protocol()"
+    - "@required"
+    - "@optional"
+    - "@encode"
+    - "@\"string\""
+    - "@synchronized()"
   sources:
     - https://learning.oreilly.com/library/view/learning-objective-c-20/9780321712110/
