@@ -16,24 +16,22 @@ variables:
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
 
 steps:
-- script: |
-    mkdir -p '$(GOBIN)'
-    mkdir -p '$(GOPATH)/pkg'
-    mkdir -p '$(modulePath)'
-    shopt -s extglob
-    shopt -s dotglob
-    mv !(gopath) '$(modulePath)'
-    echo '##vso[task.prependpath]$(GOBIN)'
-    echo '##vso[task.prependpath]$(GOROOT)/bin'
-  displayName: 'Set up the Go workspace'
-
-- script: |
-    go version
-    go get -v -t -d ./...
-    go run chart.go
-  workingDirectory: '$(modulePath)'
-  displayName: 'Get dependencies, then build'
-
+- task: GoTool@0
+  inputs:
+    version: '1.15.0'
+  displayName: 'Install Go'
+- task: Go@0
+  inputs:
+    command: 'get'
+    arguments: '-d'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Get deps'
+- task: Go@0
+  inputs:
+    command: 'run'
+    arguments: 'chart.go'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Make chart'
 - script: |
     git config --global user.email "nick@e3b0c442.io"
     git config --global user.name "Nick Meyer"
@@ -44,7 +42,7 @@ steps:
     git checkout master
     git merge new-master
     git push origin master
-  workingDirectory: '$(modulePath)'
+  workingDirectory: '$(System.DefaultWorkingDirectory)'
   displayName: 'Push auto-generated content'
   env:
     GITHUB_PAT: $(github_pat)
