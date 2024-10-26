@@ -5,7 +5,7 @@ compiled by [@leighmcculloch](https://github.com/leighmcculloch) and contributor
 
 _2022 update (WIP):_ I took the latest versions of several popularity lists and am ensuring the top 10 in all three lists were on this list. There have been some pretty significant changes in the past couple of years, including the addition of some _soft_ or _contextual_ keywords in Python 3 and Java, increasing their keyword counts significantly.
 
-In addition to the above, I migrated CI to GitHub Actions and am worknig to ensure multiple language versions with different keyword sets are represented.
+In addition to the above, I migrated CI to GitHub Actions and am working to ensure multiple language versions with different keyword sets are represented.
 
 ![Languages by keyword](chart.png)
 
@@ -863,7 +863,7 @@ Don't see a language here? Please open a pull request adding it!
 |  Loop | Me | Mod | Module |
 |  MustInherit | MustOverride | MyBase | MyClass |
 |  NameOf | Namespace | Narrowing | New |
-|  Next | Not | Nothnig | NotInheritable |
+|  Next | Not | Nothing | NotInheritable |
 |  NotOverridable | Object | Of | On |
 |  Operator | Option | Optional | Or |
 |  OrElse | Out | Overloads | Overridable |
